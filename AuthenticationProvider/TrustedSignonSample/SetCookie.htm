@@ -1,0 +1,70 @@
+<!--
+    Licensed Materials - Property of IBM
+
+    IBM Cognos Products: CAMAAA
+
+    (C) Copyright IBM Corp. 2005, 2012
+
+    US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with
+    IBM Corp.
+-->
+<html>
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+    <title>JavaScript: setting cookies</title>
+</head>
+
+<body>
+
+<h3>Set Session Cookie</h3>
+
+<script language="JavaScript">
+<!--
+letterTable='ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMabcdefghijklmnopqrstuvwxyzabcdefghijklm';
+function rot13(str) {
+ var outStr='';
+ for (var k=0;k<str.length;k++) {
+  var ch=str.charAt(k);
+  var ix=letterTable.indexOf(ch);
+  outStr+= (ix==-1) ? ch : letterTable.charAt(ix+13) ;
+ }
+ return outStr;
+}
+
+function SetCookie(cookieName,cookieValue) {
+ document.cookie = cookieName+"="+escape(cookieValue);
+}
+//-->
+</script>
+
+<form name="setCookie">
+<table border=0 cellspacing=3 cellpadding=0>
+ <tr>
+  <td>
+  <p>Cookie Name:</p>
+  </td>
+  <td>
+  <p><INPUT TYPE="TEXT" NAME="t1" VALUE="TRUSTED_SIGNON_USER"></p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <p>Cookie Value:</p>
+  </td>
+  <td>
+  <p><INPUT TYPE="TEXT" NAME="t2" VALUE="scarter"></p>
+  </td>
+ </tr>
+ <tr>
+  <td/>
+  <td>
+      <p><input type=button value="Set Cookie" name=b1 onclick="SetCookie(this.form.t1.value,this.form.t2.value);parent.location='index.html';">
+  </td>
+ </tr>
+</table>
+</form>
+
+</body>
+
+</html>

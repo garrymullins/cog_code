@@ -1,0 +1,5 @@
+abc.cde.com=namespaceID1
+ent.ad.cognos.com=NS3
+domainSplitDelimiter=@
+domainSplitPosition=after
+remoteUserSplitPosition=before
