@@ -1,0 +1,89 @@
+<HTML>
+ <HEAD>
+<!--
+Licensed Materials - Property of IBM
+
+IBM Cognos Products: DOCS
+
+(C) Copyright IBM Corp. 2005, 2008
+
+US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with
+IBM Corp.
+-->
+  <TITLE>IBM Cognos Java PrintUI Program Sample</TITLE>
+	  <link rel="STYLESHEET" type="text/css" href="../../../webcontent/samples/samplesFonts.css">
+ </HEAD>
+
+
+<BODY>
+
+<p class="headerTitle"><img src="../../../webcontent/samples/sdk/asp/images/go_logo_small.gif">&nbsp;IBM Cognos Sample Programs</p>
+
+<p class="FormLabel">PrintUI.java - Print a Report.</p>
+
+<p class="formText">The Java PrintUI sample program demonstrates how to run and print a report, change printer properties and how to get, add, and delete printers from the content store.</p>
+<br>
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Dependent Files   -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Dependent Files</p>
+
+<p class="formText">Associated files are contained under the java sample folder.<br>
+Additional files required for running are identified in the CLASSPATH definitions in run.bat file.</p>
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- How To Run        -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">How To Run The Sample Program</p>
+
+<p class="formText">Double click on the file run.bat.<br><br>
+A window will be opened containing:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Report selection dropdown box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Sample Option selection dropdown box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Run Option command button<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- URL text box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Output Pane<br>
+
+
+Select an option from the dropdown box and click on the 'Run Option' button to run the sample program.
+If you select '<b>startPrint</b>', you must also specify a report in Report selection dropdown box.</p>
+
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Expected Results  -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Expected Results</p>
+
+<p class="formText">
+When the getAvailablePrinters option is selected, the Output pane will display the list of available printers.<br>
+When the addPrinter option is selected, the user will be prompted to type in a name and address for the new printer.<br>
+When the deletePrinter option is selected, the user will be prompted to type in a name or accept the default printer name to be deleted.<br>
+When the changePrinterName option is selected, the user will be prompted to enter a current printer name or accept the default printer name. Then, the user will be prompted to enter a new printer name.
+When the changePrinterAddress option is selected, the user will be prompted to enter a current printer name or accept the default printer name. Then, the user will be prompted to enter a new printer address for this printer.
+When the startPrint option is selected, the report specified in the Report Path and Name box will be executed and sent for printing.
+
+<p class="formText">.</p>
+
+
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Documentation     -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Documentation</p>
+
+<p class="formText">The IBM Cognos Software Development Kit Developer Guide contains additional information about the samples.  See the chapter titled 'Methods' and the appendix titled 'Code Samples and Language-Specific Coding Practices'.</p>
+
+<p class="formText">Please note that the samples are not intended to be treated as end-user applications. Refer to the sample code for examples of how to use the API when developing your own applications.</p>
+
+</BODY>
+</HTML>
+
