@@ -1,0 +1,87 @@
+<HTML>
+ <HEAD>
+<!--
+Licensed Materials - Property of IBM
+
+IBM Cognos Products: DOCS
+
+(C) Copyright IBM Corp. 2005, 2008
+
+US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with
+IBM Corp.
+-->
+  <TITLE>IBM Cognos Java EditReportSpecUI Program Sample</TITLE>
+	  <link rel="STYLESHEET" type="text/css" href="../../../webcontent/samples/samplesFonts.css">
+ </HEAD>
+
+
+<BODY>
+
+<p class="headerTitle"><img src="../../../webcontent/samples/sdk/asp/images/go_logo_small.gif">&nbsp;IBM Cognos Sample Programs</p>
+
+<p class="FormLabel">EditReportSpecUI.java - Modify a report.</p>
+
+<p class="formText">The Java EditReportSpecUI sample program contains methods to retrieve a list report, add a column, update the report specification and save the updated report back to the content store.</p>
+<br>
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Dependent Files   -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Dependent Files</p>
+
+<p class="formText">Associated files are contained under the java sample folder.<br>
+Additional files required for running are identified in the CLASSPATH definitions in run.bat file.</p>
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- How To Run        -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">How To Run The Sample Program</p>
+
+<p class="formText">Double click on the file run.bat.<br><br>
+A window will be opened containing:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Report selection dropdown box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Edit Report command button<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- URL text box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Output Pane<br>
+
+<br>
+Select a list report using the drop down box and click on the 'Edit Report' button to run the sample program.<br>
+Use the Report Wizard window for selecting modifications to the report specification.</p>
+<p class="formText">Note that the sample works only with list reports, and requires a column for each item in the query.<br>
+For example, to modify the report Order Product List, first edit the report in Report Studio to remove Revenue from the query.</p>
+<p class="formText">The sample has been coded to work with the Go Data Warehouse (query) package.<br>
+For example, select the report Order Product List, and from the Product table, add the Product description column.<br>
+If you modify this report, however, please update it in Report Studio to remove the extra column and restore Revenue to the query in case other users are referring to this sample.
+Alternatively, you can use Report Studio to create a simple list report in the package to modify.<br>
+To work with another package, you may need to edit the Metadata class to select nodes differently.<br>
+(Edit both occurrences of "/ResponseRoot/folder/folder/folder/querySubject")</p>
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Expected Results  -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Expected Results</p>
+
+<p class="formText">The specified report will be modified according to your selections in the Report Wizard and saved in the content store.</p>
+
+
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Documentation     -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Documentation</p>
+
+<p class="formText">The IBM Cognos Software Development Kit Developer Guide contains additional information about the samples.  See the chapter titled 'Methods' and the appendix titled 'Code Samples and Language-Specific Coding Practices'.</p>
+
+<p class="formText">Please note that the samples are not intended to be treated as end-user applications. Refer to the sample code for examples of how to use the API when developing your own applications.</p>
+
+</BODY>
+</HTML>
+

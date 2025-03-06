@@ -1,0 +1,77 @@
+<HTML>
+ <HEAD>
+<!--
+Licensed Materials - Property of IBM
+
+IBM Cognos Products: DOCS
+
+(C) Copyright IBM Corp. 2005, 2008
+
+US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with
+IBM Corp.
+-->
+  <TITLE>IBM Cognos Java Report Spec Upgrade Sample</TITLE>
+	  <link rel="STYLESHEET" type="text/css" href="../../../webcontent/samples/samplesFonts.css">
+ </HEAD>
+
+
+<BODY>
+
+<p class="headerTitle"><img src="../../../webcontent/samples/sdk/asp/images/go_logo_small.gif">&nbsp;IBM Cognos Sample Programs</p>
+
+<p class="FormLabel">Upgrades and/or Extracts Report Specifications from Report Objects in the Content Store.</p>
+
+<p class="formText">The Java ReportUpgrade SDK sample program upgrades the Specification property of report objects in the content store. It also allows report specifications to be extracted to the local file system, as they exist, or upgraded.</p>
+<br>
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Dependent Files   -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Dependent Files</p>
+
+<p class="formText">Associated files are contained under the java sample folder.<br>
+Additional files required for running are identified in the CLASSPATH definitions in run.bat file.</p>
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- How To Run        -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">How To Run The Sample Program</p>
+
+<p class="formText">Double click on the file run.bat.<br><br>
+A window will be opened containing:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- URL text box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Tree View of the Content Store<br>
+
+<br>
+First, you must select the desired Report or Folder in the Tree View. If a folder is selected, the sample will perform any selected action on all Report Objects found in a recursive search starting with the selected Folder object<br>
+To upgrade the Report Specifications for existing Report Objects in the Content Store, select the Upgrade and Replace option in the Upgrade menu. To upgrade the Report Specification in newly created copies of Report Objects that will be added to the content store, select the Upgrade and Copy option in the Upgrade menu.<br>
+To extract Report Specifications to xml files saved on the local filesystem, select the Save To File option in the Extract menu.</p>
+
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Expected Results  -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Expected Results</p>
+
+<p class="formText">All packages, reports, queries and their associated search paths will be displayed in the Output Pane.</p>
+
+<!-- * * * * * * * * * -->
+<!--                   -->
+<!-- Documentation     -->
+<!--                   -->
+<!-- * * * * * * * * * -->
+<p class="FormLabel">Documentation</p>
+
+<p class="formText">The IBM Cognos Software Development Kit Developer Guide contains additional information about the samples.  See the chapter titled 'Methods' and the appendix titled 'Code Samples and Language-Specific Coding Practices'.</p>
+
+<p class="formText">Please note that the samples are not intended to be treated as end-user applications. Refer to the sample code for examples of how to use the API when developing your own applications.</p>
+
+</BODY>
+</HTML>
+
